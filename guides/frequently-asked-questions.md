@@ -40,7 +40,7 @@ Licenses are locked to specific IP addresses. If your server IP changes, the lic
 {% hint style="info" %}
 ### Detailed Troubleshooting
 
-For a full list of error codes and explanations, check the [License Troubleshooting](https://kdr-202604-e3dnxpe8.kodari.wiki/guides/license-troubleshooting) page.
+For a full list of error codes and explanations, check the [License Troubleshooting](https://docs.samscreations.eu/license-troubleshooting) page.
 {% endhint %}
 
 ***
