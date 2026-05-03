@@ -19,27 +19,38 @@ Requirements
 
 ***
 
-## Step-by-step guide
-
-Stepper blocks let you break down a tutorial or guide into separate, but clearly linked steps. Each step can contain multiple different blocks, allowing you to add detailed information.
+## Installation
 
 {% stepper %}
 {% step %}
-### Add a stepper block
+### Download and Install
 
-To add a stepper block, hit `/` on an empty line or click the `+` on the left of the editor and select **Stepper** from the insert menu.
+Place the `SamsRank.jar` file into your server's `plugins/` folder.
 {% endstep %}
 
 {% step %}
-### Add some content
+### Initial Startup
 
-Once you’ve inserted your stepper block, you can start adding content to it — including code blocks, drawings, images and much more.
+Start your server to generate the default configuration files. The plugin will initially disable itself until you provide a license key.
 {% endstep %}
 
 {% step %}
-### Add more steps
+### Configure License
 
-Click the `+` below the step numbers or hit `Enter` twice to add another step to your stepper block. You can remove or change the style of the step header or step body if you wish.
+Open `plugins/SamsRank/config.yml` and enter your credentials:
+
+```
+license:
+  discord_username: "your_username"
+  license_key: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+```
+{% endstep %}
+
+{% step %}
+### Restart
+
+Restart your server. Upon a successful license check, the plugin will detect your platform (ItemsAdder, Nexo, or Vanilla) and print a startup banner.
 {% endstep %}
 {% endstepper %}
 
+***
