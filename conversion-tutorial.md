@@ -53,14 +53,14 @@ Use `/samsrank list` to see your ranks. You can click on any rank in the chat to
 
 One of the most powerful features of the conversion is the automatic injection of shaders. This allows you to apply animations to your ranks using placeholders.
 
-**Example Placeholder:**`%samsrank_starlight_admin%`
+**Example Placeholder:** `%samsrank_starlight_admin%`
 
 This would display the `admin` rank with a diagonal shimmering effect. You can see all available effects using `/samsrank effects`.
 
 
 
 {% hint style="info" %}
-**Auto-Delete:**
+### **Auto-Delete:**
 
 By default, the plugin deletes the source images from `ranks/` after a successful conversion to prevent duplicates. You can disable this by setting `auto_delete.enabled: false` in the config.
 {% endhint %}
