@@ -10,7 +10,7 @@ icon: rocket
 Welcome to SamsRank! This guide will walk you through the installation process and initial configuration to get your custom rank tags working in-game.
 
 {% hint style="info" %}
-Requirements
+**Requirements:**
 
 * **Java 21** or higher.
 * **Paper 1.21+** (or derivatives like Purpur/Folia).
@@ -32,6 +32,12 @@ Place the `SamsRank.jar` file into your server's `plugins/` folder.
 ### Initial Startup
 
 Start your server to generate the default configuration files. The plugin will initially disable itself until you provide a license key.
+{% endstep %}
+
+{% step %}
+### Register
+
+First, you need to register on the website [https://ranktags.samscreations.eu/](https://ranktags.samscreations.eu/). Then join our Discord server and create a ticket. After that, we will provide you with a license.
 {% endstep %}
 
 {% step %}
