@@ -10,7 +10,7 @@ icon: rocket
 Welcome to SamsRank! This guide will walk you through the installation process and initial configuration to get your custom rank tags working in-game.
 
 {% hint style="info" %}
-### **Requirements:**
+### **Requirements**
 
 * **Java 21** or higher.
 * **Paper 1.21+** (or derivatives like Purpur/Folia).

@@ -60,7 +60,7 @@ This would display the `admin` rank with a diagonal shimmering effect. You can s
 
 
 {% hint style="info" %}
-### **Auto-Delete:**
+### **Auto-Delete**
 
 By default, the plugin deletes the source images from `ranks/` after a successful conversion to prevent duplicates. You can disable this by setting `auto_delete.enabled: false` in the config.
 {% endhint %}
