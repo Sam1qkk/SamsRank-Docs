@@ -1,7 +1,5 @@
 # Table of contents
 
-## SamsRank
-
 ## Guides
 
 * [Getting Started](README.md)
