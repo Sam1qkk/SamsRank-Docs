@@ -1,81 +1,55 @@
 ---
-description: Learn how to install and configure SamsRank! :)
-icon: rocket
+description: Welcome to the SamsRank documentation!
+icon: house-chimney-window
 ---
 
-# Getting Started
+# Home
 
-## Getting Started <a href="#getting-started" id="getting-started"></a>
+## [SamsRank](https://builtbybit.com/resources/sams-ranks-minecraft-rank-generator.104352/) <a href="#samshead" id="samshead"></a>
 
-Welcome to SamsRank! This guide will walk you through the installation process and initial configuration to get your custom rank tags working in-game.
+SamsRank is a powerful rank tag utility for Minecraft servers, offering seamless PNG conversion, cross-platform support for ItemsAdder and Nexo, and revolutionary shader-based animations.
 
-{% hint style="info" %}
-### **Requirements**
+{% hint style="success" %}
+#### Advanced Rank Animations
 
-* **Java 21** or higher.
-* **Paper 1.21+** (or derivatives like Purpur/Folia).
-* A valid license key from our [Discord](https://discord.gg/KrvMkMDE2W).
+SamsRank includes a custom shader pipeline that allows you to apply high-performance animations like Shimmers, Glitches, and Glows to your rank tags via PlaceholderAPI.
 {% endhint %}
 
 ***
 
-## Installation
+### Compatibility
 
-{% stepper %}
-{% step %}
-### Download and Install
+{% tabs %}
+{% tab title="Software" %}
+* **Java:** 21+
+* **Server Version:** 1.21+
+* **Supported Software:** Spigot, Paper, Purpur
+{% endtab %}
 
-Place the `SamsRank.jar` file into your server's `plugins/` folder.
-{% endstep %}
-
-{% step %}
-### Initial Startup
-
-Start your server to generate the default configuration files. The plugin will initially disable itself until you provide a license key.
-{% endstep %}
-
-{% step %}
-### Register
-
-First, you need to register on the website [https://ranktags.samscreations.eu/](https://ranktags.samscreations.eu/). Then join our Discord server and create a ticket. After that, we will provide you with a license.
-{% endstep %}
-
-{% step %}
-### Configure License
-
-Open `plugins/SamsRank/config.yml` and enter your credentials:
-
-```
-license:
-  discord_username: "your_username"
-  license_key: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-```
-{% endstep %}
-
-{% step %}
-### Restart
-
-Restart your server. Upon a successful license check, the plugin will detect your platform (ItemsAdder, Nexo, or Vanilla) and print a startup banner.
-{% endstep %}
-{% endstepper %}
+{% tab title="Integrations" %}
+* **Required:** [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)
+* **Optional:** [ItemsAdder](https://itemsadder.devs.beer/) or [Nexo](https://nexoplugin.com/)
+{% endtab %}
+{% endtabs %}
 
 ***
 
-## Folder Structure
+### Navigation
 
-SamsRank uses a simplified single-folder system for all platforms:
+{% content-ref url="/broken/pages/9g7cuIWaJsyHI6EKQUbj" %}
+[Broken link](/broken/pages/9g7cuIWaJsyHI6EKQUbj)
+{% endcontent-ref %}
 
-* `plugins/SamsRank/ranks/`: Drop all your raw `.png` rank templates here.
-* `plugins/SamsRank/resourcepack/`: The built-in resource pack is generated here.
-* `plugins/SamsRank/lang/`: Language files for plugin messages.
+{% content-ref url="/broken/pages/LUTGjyyRzf2UNqGo42ld" %}
+[Broken link](/broken/pages/LUTGjyyRzf2UNqGo42ld)
+{% endcontent-ref %}
+
+
 
 ***
 
-## Basic Commands
+{% hint style="info" %}
+#### Support me!
 
-| Command             | Description                            | Permission         |
-| ------------------- | -------------------------------------- | ------------------ |
-| `/samsrank convert` | Converts PNGs in the ranks folder      | `samsrank.convert` |
-| `/samsrank list`    | Interactive preview of converted ranks | `samsrank.list`    |
-| `/samsrank effects` | Browse shader-based rank effects       | `samsrank.effects` |
-| `/samsrank reload`  | Reload config and update resource pack | `samsrank.reload`  |
+If you enjoy using SamsHead, feel free to [Buy me a coffee](https://ko-fi.com/sam1qk)! Thank you! 🧡
+{% endhint %}

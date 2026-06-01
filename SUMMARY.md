@@ -1,8 +1,10 @@
 # Table of contents
 
+* [Home](README.md)
+
 ## Guides
 
-* [Getting Started](README.md)
+* [Getting Started](<README (1).md>)
 * [Conversion Tutorial](guides/conversion-tutorial.md)
 * [Resource Pack Hosting](guides/resource-pack-hosting.md)
 * [Frequently Asked Questions](guides/frequently-asked-questions.md)
