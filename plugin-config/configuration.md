@@ -7,56 +7,68 @@ icon: seal
 
 ## Configuration Guide <a href="#configuration-guide" id="configuration-guide"></a>
 
-This page covers every setting available in the `config.yml` file. SamsRank uses an auto-patching system that injects new settings into your existing file without overwriting your changes.
+This page covers every setting available in the `config.yml` file. SamsHead offers deep customization for caching, rendering, and resource pack delivery.
 
 ***
 
-## License Settings <a href="#configuration-guide" id="configuration-guide"></a>
+## General Settings <a href="#configuration-guide" id="configuration-guide"></a>
 
-{% hint style="warning" %}
-### Required
+* `language`: The language file to use from the `lang/` folder (e.g., `en_US`, `cs_CZ`).
+* `debug`: Enables detailed logging for skin fetching and database operations.
 
-You must configure these values for the plugin to function. Join our [Discord](https://discord.gg/KrvMkMDE2W) to get a key.
+***
+
+## Skin Cache <a href="#configuration-guide" id="configuration-guide"></a>
+
+{% hint style="info" %}
+#### Persistence
+
+SamsHead uses a SQLite database (`skins.db`) to persist skins across restarts, significantly reducing API calls to Mojang.
 {% endhint %}
 
-* **`license.discord_username`**: The Discord handle associated with your purchase.
-* **`license.license_key`**: Your unique UUID license key.
+|          Option          |              Description              |    Default    |
+| :----------------------: | :-----------------------------------: | :-----------: |
+|      cache.duration      |  Seconds before a skin is re-fetched. | `86400` (24h) |
+|      cache.max-size      |       Max skins held in memory.       |      500      |
+| cache.auto-cache-on-join | Pre-fetches skin when a player joins. |      true     |
 
 ***
 
-## Platform Settings <a href="#configuration-guide" id="configuration-guide"></a>
+## Rendering Options <a href="#configuration-guide" id="configuration-guide"></a>
 
-* **`platform.preferred`**:
-  * `itemsadder`: Forces ItemsAdder mode.
-  * `nexo`: Forces Nexo mode.
-  * `both`: Enables both (default).
+#### `render.default-layer` <a href="#renderdefault-layer" id="renderdefault-layer"></a>
 
-***
+Determines the default look of avatars if not specified in the placeholder.
 
-## Folder Customization <a href="#configuration-guide" id="configuration-guide"></a>
+* `face`: Base skin layer only.
+* `head`: Base skin + hat/overlay layer (Recommended).
 
-* **`folders.ranks`**: The root folder for source PNG images (Default: `ranks`).
+#### `render.sizes` <a href="#rendersizes" id="rendersizes"></a>
 
-***
+Defines the pixel height of the rendered avatar for each preset. Values can range from 1 to 64.
 
-## Auto Delete <a href="#configuration-guide" id="configuration-guide"></a>
-
-* **`auto_delete.enabled`**: If `true`, source PNGs are removed after successful conversion to keep the workspace clean.
+```
+sizes:
+  small: 4
+  medium: 8
+  normal: 12
+  large: 16
+  giant: 32
+```
 
 ***
 
 ## ResourcePack Provider <a href="#configuration-guide" id="configuration-guide"></a>
 
-Used when no external platform (ItemsAdder/Nexo) is detected.
+* Used when no external platform (ItemsAdder/Nexo) is detected.
 
-* **`resource-pack.enabled`**: Enables the built-in HTTP server.
-* **`resource-pack.port`**: The port for the web server (Default: `8765`).
-* **`resource-pack.hostname`**: Public IP/Domain for the download link.
-* **`resource-pack.required`**: If `true`, players are kicked if they decline the pack.
+{% hint style="warning" %}
+#### Firewall
 
-***
+If using the internal server, ensure the port (default `8765`) is open in your server's firewall.
+{% endhint %}
 
-## ResourcePack Settings <a href="#configuration-guide" id="configuration-guide"></a>
-
-* **`samsrank-resourcepack.height`**: Rendered glyph height (Default: `9`).
-* **`samsrank-resourcepack.ascent`**: Vertical position offset (Default: `8`).
+* `serve.enabled`: Whether to run the internal HTTP server.
+* `serve.host`: Your public IP. Leave empty to auto-detect.
+* `serve.url`: If you host the `pack.zip` elsewhere, enter the direct link here.
+* `serve.required`: If true, players cannot play without accepting the pack.
