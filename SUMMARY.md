@@ -15,3 +15,5 @@
 ## Plugin Config
 
 * [Configuration](plugin-config/configuration.md)
+
+## Developers
