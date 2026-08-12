@@ -5,9 +5,10 @@ icon: computer-speaker
 
 # In-Game Editor
 
-### In-Game Interface&#xD;
+In-Game Interface
 
-SamsRank features a revolutionary client-side UI built entirely from display entities. This allows you to manage, design, and edit your rank tags without ever leaving the game or touching a configuration file.
+
+SamsRank features a revolutionary UI built entirely from display entities. This allows you to manage, design, and edit your rank tags without ever leaving the game or touching a configuration file.
 
 {% hint style="info" %}
 #### How to Open?
@@ -17,7 +18,7 @@ Run `/samsrank` or `/samsrank menu` to open the manager. To jump straight into e
 
 ***
 
-### Controls
+## Controls
 
 Instead of a traditional inventory menu, the SamsRank UI is projected in front of your camera.
 
@@ -31,7 +32,7 @@ Instead of a traditional inventory menu, the SamsRank UI is projected in front o
 
 ***
 
-### Pixel Editor Tools
+## Pixel Editor Tools
 
 The editor on the left provides tools for pixel art:
 
@@ -47,7 +48,7 @@ The editor on the left provides tools for pixel art:
 
 ***
 
-### Saving and Rebuilding
+## Saving and Rebuilding
 
 When you save your changes in the editor, SamsRank automatically:
 

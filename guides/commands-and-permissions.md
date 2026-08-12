@@ -5,7 +5,7 @@ icon: square-terminal
 
 # Commands & Permissions
 
-### Commands
+## Commands
 
 All commands can be used with the `/samsrank` or `/sr` prefix.
 

@@ -11,7 +11,7 @@ Find answers to common questions about licensing, configuration, and troubleshoo
 
 ***
 
-## Frequently Asked Questions <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
+## Licensing & Activation <a href="#licensing-activation" id="licensing-activation"></a>
 
 <details open>
 
@@ -44,6 +44,28 @@ For a full list of error codes and explanations, check the [License Troubleshoot
 {% endhint %}
 
 ***
+
+## In-Game Editor
+
+<details>
+
+<summary>The UI is too big or too small, how do I fix it?</summary>
+
+You can tune the size using the `ui.rendering.hud-scale-divisor` setting in `config.yml`. A **smaller** number makes the UI **larger**. It is currently tuned for an 90 FOV by default.
+
+</details>
+
+<details>
+
+<summary>How do I close the UI?</summary>
+
+Simply press your **F** key. This will immediately close the session and clean up the display entities.
+
+</details>
+
+***
+
+
 
 ## Conversion & Platforms
 

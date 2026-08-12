@@ -33,12 +33,6 @@ You must configure these values for the plugin to function. Join our [Discord](h
 
 ***
 
-## Folder Customization <a href="#configuration-guide" id="configuration-guide"></a>
-
-* **`folders.ranks`**: The root folder for source PNG images (Default: `ranks`).
-
-***
-
 ## Auto Delete <a href="#configuration-guide" id="configuration-guide"></a>
 
 * **`auto_delete.enabled`**: If `true`, source PNGs are removed after successful conversion to keep the workspace clean.
@@ -60,3 +54,14 @@ Used when no external platform (ItemsAdder/Nexo) is detected.
 
 * **`samsrank-resourcepack.height`**: Rendered glyph height (Default: `9`).
 * **`samsrank-resourcepack.ascent`**: Vertical position offset (Default: `8`).
+
+***
+
+## UI Rendering Settings
+
+These settings control how the In-Game Interface is positioned and scaled in your view.
+
+* **`ui.cursor.sensitivity`**: How fast the cursor moves. Higher = faster (Default: `4.0`).
+* **`ui.rendering.hud-scale-divisor`**: The master size knob. A **smaller** number makes the UI **bigger** (Default: `762.5`).
+* **`ui.rendering.anchor-forward-offset`**: Distance (in blocks) the UI sits in front of you. 0.8 is close enough to avoid most wall clipping. (Default: `0.8`).
+* **`ui.rendering.canvas-offset-y`**: Vertical nudge to center the UI on your screen. (Default: `470.0`).
