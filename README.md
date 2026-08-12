@@ -41,7 +41,7 @@ SamsRank includes a custom shader pipeline that allows you to apply high-perform
 {% hint style="info" icon="computer-speaker" %}
 #### **In-Game HUD Editor**
 
-Manage and edit your ranks visually without touching a single configuration file or command.
+Manage and edit your ranks without touching a single configuration file or command.
 {% endhint %}
 {% endcolumn %}
 
