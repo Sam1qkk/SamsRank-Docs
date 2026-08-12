@@ -12,7 +12,7 @@ All commands can be used with the `/samsrank` or `/sr` prefix.
 {% hint style="info" %}
 #### Skip the Commands
 
-You can perform all these steps visually using the [In-Game Editor](https://kdr-202604-e3dnxpe8.kodari.wiki/guides/ingame-editor). Simply run `/samsrank` to manage your ranks without typing long commands.
+You can perform all these steps visually using the [In-Game Editor](https://docs.samscreations.eu/samsrank/guides/in-game-editor). Simply run `/samsrank` to manage your ranks without typing long commands.
 {% endhint %}
 
 |       Command      |               Description              |     Permission    |
