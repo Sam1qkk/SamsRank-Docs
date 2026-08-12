@@ -13,7 +13,7 @@ Welcome to SamsRank! This guide will walk you through the installation process a
 ### **Requirements**
 
 * **Java 21** or higher.
-* **Paper 1.21+** (or derivatives like Purpur/Folia).
+* **Paper 1.21+** (or Purpur/Folia).
 * A valid license key from our [Discord](https://discord.gg/KrvMkMDE2W).
 {% endhint %}
 
@@ -68,14 +68,3 @@ SamsRank uses a simplified single-folder system for all platforms:
 * `plugins/SamsRank/ranks/`: Drop all your raw `.png` rank templates here.
 * `plugins/SamsRank/resourcepack/`: The built-in resource pack is generated here.
 * `plugins/SamsRank/lang/`: Language files for plugin messages.
-
-***
-
-## Basic Commands
-
-| Command             | Description                            | Permission         |
-| ------------------- | -------------------------------------- | ------------------ |
-| `/samsrank convert` | Converts PNGs in the ranks folder      | `samsrank.convert` |
-| `/samsrank list`    | Interactive preview of converted ranks | `samsrank.list`    |
-| `/samsrank effects` | Browse shader-based rank effects       | `samsrank.effects` |
-| `/samsrank reload`  | Reload config and update resource pack | `samsrank.reload`  |

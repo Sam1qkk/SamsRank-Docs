@@ -17,6 +17,23 @@ SamsRank includes a custom shader pipeline that allows you to apply high-perform
 
 ***
 
+### Compatibility
+
+{% tabs %}
+{% tab title="Software" %}
+* **Java:** 21+
+* **Server Version:** 1.21+
+* **Supported Software:** Spigot, Paper, Purpur
+{% endtab %}
+
+{% tab title="Integrations" %}
+* **Required:** [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)
+* **Optional:** [ItemsAdder](https://itemsadder.devs.beer/) or [Nexo](https://nexoplugin.com/)
+{% endtab %}
+{% endtabs %}
+
+***
+
 ### Key Features
 
 {% columns %}
@@ -55,21 +72,6 @@ Native support for ItemsAdder, Nexo, and Vanilla resource pack setups.
 {% endcolumn %}
 {% endcolumns %}
 
-### Compatibility
-
-{% tabs %}
-{% tab title="Software" %}
-* **Java:** 21+
-* **Server Version:** 1.21+
-* **Supported Software:** Spigot, Paper, Purpur
-{% endtab %}
-
-{% tab title="Integrations" %}
-* **Required:** [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/)
-* **Optional:** [ItemsAdder](https://itemsadder.devs.beer/) or [Nexo](https://nexoplugin.com/)
-{% endtab %}
-{% endtabs %}
-
 ***
 
 ### Navigation
@@ -89,5 +91,5 @@ Native support for ItemsAdder, Nexo, and Vanilla resource pack setups.
 {% hint style="info" %}
 #### Support me!
 
-If you enjoy using SamsHead, feel free to [Buy me a coffee](https://ko-fi.com/sam1qk)! Thank you! 🧡
+If you enjoy using SamsRank, feel free to [Buy me a coffee](https://ko-fi.com/sam1qk)! Thank you! 🧡
 {% endhint %}
