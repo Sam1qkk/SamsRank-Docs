@@ -7,7 +7,7 @@ icon: house-chimney-window
 
 ## [SamsRank](https://builtbybit.com/resources/sams-ranks-minecraft-rank-generator.104352/) <a href="#samshead" id="samshead"></a>
 
-SamsRank is a powerful rank tag utility for Minecraft servers, offering seamless PNG conversion, cross-platform support for ItemsAdder and Nexo, and revolutionary shader-based animations.
+SamsRank is a powerful rank tag utility for Minecraft servers, offering seamless PNG conversion, cross-platform support for ItemsAdder and Nexo, revolutionary shader-based animations and a new in-game editor!
 
 {% hint style="success" %}
 #### Advanced Rank Animations
@@ -16,6 +16,44 @@ SamsRank includes a custom shader pipeline that allows you to apply high-perform
 {% endhint %}
 
 ***
+
+### Key Features
+
+{% columns %}
+{% column %}
+{% hint style="info" icon="computer-speaker" %}
+#### **In-Game HUD Editor**
+
+Manage and edit your ranks visually without touching a single configuration file or command.
+{% endhint %}
+{% endcolumn %}
+
+{% column %}
+{% hint style="success" icon="gear" %}
+#### **PNG Conversion**
+
+Drop PNGs into a folder and convert them into fully functional rank tags with one command.
+{% endhint %}
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% hint style="warning" icon="wand-magic-sparkles" %}
+#### Shader Effects
+
+17+ built-in shader effects including Starlight, Blaze, and Aurora for animated tags.
+{% endhint %}
+{% endcolumn %}
+
+{% column %}
+{% hint style="danger" icon="puzzle-piece" %}
+#### Platform Agnostic
+
+Native support for ItemsAdder, Nexo, and Vanilla resource pack setups.
+{% endhint %}
+{% endcolumn %}
+{% endcolumns %}
 
 ### Compatibility
 
@@ -36,12 +74,12 @@ SamsRank includes a custom shader pipeline that allows you to apply high-perform
 
 ### Navigation
 
-{% content-ref url="/broken/pages/9g7cuIWaJsyHI6EKQUbj" %}
-[Broken link](/broken/pages/9g7cuIWaJsyHI6EKQUbj)
+{% content-ref url="https://app.gitbook.com/s/EbT1PoPu2eqE3eWL5xVL/guides" %}
+[Guides](https://app.gitbook.com/s/EbT1PoPu2eqE3eWL5xVL/guides)
 {% endcontent-ref %}
 
-{% content-ref url="/broken/pages/LUTGjyyRzf2UNqGo42ld" %}
-[Broken link](/broken/pages/LUTGjyyRzf2UNqGo42ld)
+{% content-ref url="https://app.gitbook.com/s/EbT1PoPu2eqE3eWL5xVL/plugin-config" %}
+[Plugin Config](https://app.gitbook.com/s/EbT1PoPu2eqE3eWL5xVL/plugin-config)
 {% endcontent-ref %}
 
 
