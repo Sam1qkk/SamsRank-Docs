@@ -5,43 +5,76 @@ icon: circle-question
 
 # Frequently Asked Questions
 
-## Frequently Asked Questions <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
+## Frequently Asked Questions
 
-Find answers to common questions about licensing, configuration, and troubleshooting.
+Answers to the most common questions.
 
 ***
 
-## Licensing & Activation <a href="#licensing-activation" id="licensing-activation"></a>
+## Licensing
 
-<details open>
+<details>
 
 <summary>How do I get a license key?</summary>
 
-You can obtain a license key by joining our [Discord Server](https://discord.gg/KrvMkMDE2W) and opening a support ticket. Our team will assist you with the registration process.
+Register on [ranktags.samscreations.eu](https://ranktags.samscreations.eu), then join our [Discord](https://discord.gg/KrvMkMDE2W) and open a ticket.
 
 </details>
 
-<details open>
+<details>
 
 <summary>What happens if the license server is down?</summary>
 
-SamsRank includes a built-in retry mechanism. If the server is unreachable or rate-limited, the plugin will remain active and attempt to verify in the background for several minutes before disabling itself. This ensures your server's visual elements don't break during brief outages.
+If the server is unreachable or rate-limited, SamsRank stays enabled and retries in the background before disabling itself, so tags don't break during short outages.
 
 </details>
 
-<details open>
+<details>
 
-<summary>Why did my license fail after a server move?</summary>
+<summary>My license failed after moving servers.</summary>
 
-Licenses are locked to specific IP addresses. If your server IP changes, the license system may flag it as "Too many IPs". You will need to request an IP reset in our Discord.
+Licenses are tied to a limited number of IPs. Open a ticket on [Discord](https://discord.gg/KrvMkMDE2W) for an IP reset. See License Troubleshooting.
 
 </details>
 
-{% hint style="info" %}
-### Detailed Troubleshooting
+***
 
-For a full list of error codes and explanations, check the [License Troubleshooting](https://docs.samscreations.eu/license-troubleshooting) page.
-{% endhint %}
+## Tags & Effects
+
+<details>
+
+<summary>My tag shows as a box / [] / nothing.</summary>
+
+The player doesn't have the current resource pack. Run `/samsrank reload` (on ItemsAdder, wait for `/iazip` to finish), then have the player rejoin. `/samsrank report` lists any rank that is missing its character (under **Missing glyphs**).
+
+</details>
+
+<details>
+
+<summary>The effect doesn't animate.</summary>
+
+* Check `effects.enabled` is `true`.
+* Make sure the pack was regenerated after updating SamsRank and the player rejoined.
+* On 26.3, your ItemsAdder / Nexo build must support 26.3 too.
+* Using BetterHud? Keep `integrations.betterhud: true` - see BetterHud.
+
+</details>
+
+<details>
+
+<summary>TAB / chat says "Legacy formatting codes have been detected".</summary>
+
+Your plugin reads placeholders as MiniMessage. Set `placeholders.output-format: minimessage` - see Placeholders.
+
+</details>
+
+<details>
+
+<summary>Can Bedrock players see the tags?</summary>
+
+Yes - with Geyser, automatically. They see the static tag (effects are Java-only). See Bedrock (Geyser).
+
+</details>
 
 ***
 
@@ -49,9 +82,9 @@ For a full list of error codes and explanations, check the [License Troubleshoot
 
 <details>
 
-<summary>The UI is too big or too small, how do I fix it?</summary>
+<summary>The UI is too big or too small.</summary>
 
-You can tune the size using the `ui.rendering.hud-scale-divisor` setting in `config.yml`. A **smaller** number makes the UI **larger**. It is currently tuned for an 90 FOV by default.
+Tune `ui.rendering.hud-scale-divisor` in `config.yml`. A **smaller** number makes the UI **bigger**. The default suits around 80-90 FOV.
 
 </details>
 
@@ -59,28 +92,34 @@ You can tune the size using the `ui.rendering.hud-scale-divisor` setting in `con
 
 <summary>How do I close the UI?</summary>
 
-Simply press your **F** key. This will immediately close the session and clean up the display entities.
+Press **F** (swap hands). **Q** goes back a screen. Both can be rebound under `ui.keybinds`.
+
+</details>
+
+<details>
+
+<summary>Can staff look at ranks without changing them?</summary>
+
+Yes - give them `samsrank.edit.view` instead of `samsrank.edit`.
 
 </details>
 
 ***
 
-
-
 ## Conversion & Platforms
 
-<details open>
+<details>
 
-<summary>Which platform should I choose: ItemsAdder or Nexo?</summary>
+<summary>ItemsAdder or Nexo - which should I use?</summary>
 
-SamsRank supports both! If you already use one of these for your custom items, stick with it. If you have both installed, you can use the `platform.preferred` setting in `config.yml` to choose which one handles the conversion and placeholders.
+Both are fully supported. If you already use one for custom items, stick with it. With both installed, `platform.preferred` chooses which one handles the ranks.
 
 </details>
 
-<details open>
+<details>
 
 <summary>Why are my PNGs deleted after conversion?</summary>
 
-By default, the `auto_delete.enabled` setting is set to `true`. This keeps your `templates` folder clean by removing source images once they are safely packed into an export ZIP. You can disable this in the config if you prefer to keep them.
+`auto_delete.enabled` is `true` by default so ranks aren't converted twice. Set it to `false` to keep the source images.
 
 </details>

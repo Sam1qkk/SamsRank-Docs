@@ -61,10 +61,55 @@ Restart your server. Upon a successful license check, the plugin will detect you
 
 ***
 
+Your First Rank
+
+
+SamsRank ships with an `example` rank so you can test right away.
+
+{% stepper %}
+{% step %}
+### Get a Tag
+
+Design one on the [web generator](https://ranktags.samscreations.eu/dashboard), draw one in the [in-game editor](https://github.com/Sam1qkk/SamsRank/blob/main/docs/guides/in-game-editor.md) (`/samsrank`), or drop any `.png` into `plugins/SamsRank/ranks/`.&#x20;
+{% endstep %}
+
+{% step %}
+### Convert It
+
+SamsRank generates the font, configs, textures and shaders - see the [Conversion Tutorial](https://github.com/Sam1qkk/SamsRank/blob/main/docs/guides/conversion-tutorial.md).&#x20;
+{% endstep %}
+
+{% step %}
+### Reload the Pack&#xD;
+
+On ItemsAdder or Nexo, SamsRank asks the platform to rebuild its pack for you. Players rejoin (or re-accept the pack) to see the new tag.
+{% endstep %}
+
+{% step %}
+### Use It!
+
+Put the placeholder anywhere PlaceholderAPI works, a LuckPerms prefix, TAB, chat format or hologram:
+
+```
+%samsrank_example%
+%samsrank_aurora_example%
+```
+
+The second one shows the tag with the animated **aurora** effect. See [Placeholders](https://github.com/Sam1qkk/SamsRank/blob/main/docs/guides/placeholders.md) and [Rank Effects](https://github.com/Sam1qkk/SamsRank/blob/main/docs/guides/rank-effects.md).
+{% endstep %}
+{% endstepper %}
+
+***
+
 ## Folder Structure
 
-SamsRank uses a simplified single-folder system for all platforms:
-
-* `plugins/SamsRank/ranks/`: Drop all your raw `.png` rank templates here.
-* `plugins/SamsRank/resourcepack/`: The built-in resource pack is generated here.
-* `plugins/SamsRank/lang/`: Language files for plugin messages.
+```
+plugins/SamsRank/
+├── config.yml              Global settings
+├── char_map.yml            Which character each rank uses (managed for you)
+├── ranks/                  Drop your raw .png rank tags here
+├── resourcepack/           Built-in pack (Vanilla mode)
+├── bedrock/                Generated Bedrock pack (when Geyser/Floodgate is installed)
+├── debug/                  Output of /samsrank report
+└── lang/                   Language files (en_US, sk_SK, cs_CZ, pl_PL)
+```

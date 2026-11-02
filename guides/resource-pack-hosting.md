@@ -21,23 +21,25 @@ The port you choose (default `8765`) must be open in your firewall (TCP) and cor
 
 If you are not using ItemsAdder or Nexo (which handle their own hosting), you can enable the internal server in `config.yml`:
 
-```
+```yaml
 resource-pack:
   enabled: true
   port: 8765
-  hostname: "your.server.ip" # Leave empty to auto-detect
-  required: true             # Force players to accept the pack
-  kick-message: "&cYou must accept the resource pack to play!"
+  hostname: ""          # public IP or domain, leave empty to auto-detect
+  url-override: ""      # use your own URL instead (e.g. behind a CDN)
+  required: false       # kick players who decline or fail to download
+  max-retries: 3        # re-send the pack this many times if a download fails
+  kick-message: "&cYou must accept the resource pack to play on this server."
 ```
 
 ***
 
 ## Automatic Updates <a href="#conversion-tutorial" id="conversion-tutorial"></a>
 
-Whenever you run `/samsrank convert`, the plugin performs the following actions:
+Whenever ranks change (`/samsrank convert`, the editor, `/samsrank reload`), SamsRank:
 
-1. Rebuilds the `pack.zip` in the `resourcepack/` folder.
-2. Notifies all online players to download the updated version.
+1. Rebuilds `pack.zip` from the `resourcepack/` folder.
+2. Sends the updated pack to online players.
 
 ***
 
@@ -56,5 +58,13 @@ If you see a warning that port `8765` is in use, check if another plugin (like S
 <summary><strong>Players see 'Download Failed'</strong></summary>
 
 Ensure your `hostname` is correct. If you are using a proxy (like Cloudflare), you must use your actual public IP or a direct subdomain that isn't proxied, as Minecraft clients need a direct connection to download the zip.
+
+</details>
+
+<details>
+
+<summary><strong>The pack doesn't start downloading for some players</strong></summary>
+
+Turn on `debug.resourcepack` in `config.yml`. It logs every send, retry, each player's download status and every HTTP request. `max-retries` re-sends the pack automatically when a download is dropped.
 
 </details>

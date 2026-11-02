@@ -5,62 +5,79 @@ icon: gear
 
 # Conversion Tutorial
 
-## Conversion Tutorial <a href="#conversion-tutorial" id="conversion-tutorial"></a>
-
-SamsRank automates the process of generating configurations, font providers, and shaders for your rank tags.
-
-***
-
 ## Conversion
+
+SamsRank automates everything a custom rank tag needs: the font provider, ItemsAdder/Nexo configs, textures and the effect shaders.
 
 {% stepper %}
 {% step %}
-### Prepare images
+#### Prepare images
 
-Place your rank tag images (must be `.png`) into the `plugins/SamsRank/ranks/` folder.
+Place your rank tag images (must be `.png`) into `plugins/SamsRank/ranks/`. The file name becomes the rank name, so `Owner.png` becomes the rank `owner`.
 {% endstep %}
 
 {% step %}
-### Run conversion
+#### Run conversion
 
-Run the command `/samsrank convert`.
+```
+/samsrank convert
+```
 
 SamsRank will:
 
-* Optimize the filenames.
-* Copy textures to the resource pack.
-* Generate ItemsAdder/Nexo configs (if detected).
-* Update the `default.json` font provider.
-* Inject custom shaders for **Rank Effects**.
+* Clean up the file names into valid rank names.
+* Copy the textures into the right pack (ItemsAdder, Nexo or its own).
+* Generate the ItemsAdder / Nexo configs (if detected).
+* Give each rank its own character and write the font provider.
+* Install the shaders for the animated Rank Effects.
 {% endstep %}
 
 {% step %}
-### Reload
+#### Reload
 
-Reload the plugin using `/samsrank reload`. If you are using ItemsAdder, run `/iareload` and then `/iazip`. If you are using Nexo, run `/nexo reload`.
+```
+/samsrank reload
+```
+
+On **ItemsAdder** and **Nexo**, SamsRank asks the platform to rebuild and re-send its pack for you (`iareload` + `iazip` / `nexo reload`). Players need to rejoin or re-accept the pack.
 {% endstep %}
 
 {% step %}
-### Verify
+#### Verify
 
-Use `/samsrank list` to see your ranks. You can click on any rank in the chat to copy its PlaceholderAPI format directly to your clipboard.
+Use `/samsrank list` to see your ranks. Click any rank in chat to copy its placeholder to your clipboard.
 {% endstep %}
 {% endstepper %}
 
+{% hint style="info" %}
+#### **Auto-Delete**
+
+By default, the source images in `ranks/` are deleted after a successful conversion so they aren't converted twice. Set `auto_delete.enabled: false` in the config to keep them.
+{% endhint %}
+
 ***
 
-## Rank Effects (Shaders) <a href="#conversion-tutorial" id="conversion-tutorial"></a>
+## Tag Size
 
-One of the most powerful features of the conversion is the automatic injection of shaders. This allows you to apply animations to your ranks using placeholders.
+All tags share one size, set in `config.yml`:
 
-**Example Placeholder:** `%samsrank_starlight_admin%`
+```yaml
+samsrank-resourcepack:
+  height: 9   # how tall the tag is drawn (in font pixels)
+  ascent: 8   # how far it sits above the text baseline (must be <= height)
+```
 
-This would display the `admin` rank with a diagonal shimmering effect. You can see all available effects using `/samsrank effects`.
+After changing these, run `/samsrank convert` and regenerate your pack.
 
+***
 
+## Other Ways to Create Ranks
 
-{% hint style="info" %}
-### **Auto-Delete**
+* **Web Generator** - design a tag online or generate one with `/samsrank generate`.
+* **In-Game Editor** - create and draw ranks pixel by pixel with `/samsrank`.
 
-By default, the plugin deletes the source images from `ranks/` after a successful conversion to prevent duplicates. You can disable this by setting `auto_delete.enabled: false` in the config.
+Both save the PNG and convert it for you.
+
+{% hint style="success" %}
+Bedrock players get the same tags automatically, see Bedrock (Geyser).
 {% endhint %}

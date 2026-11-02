@@ -80,8 +80,8 @@ Native support for ItemsAdder, Nexo, and Vanilla resource pack setups.
 [Guides](https://app.gitbook.com/s/EbT1PoPu2eqE3eWL5xVL/guides)
 {% endcontent-ref %}
 
-{% content-ref url="https://app.gitbook.com/s/EbT1PoPu2eqE3eWL5xVL/plugin-config" %}
-[Plugin Config](https://app.gitbook.com/s/EbT1PoPu2eqE3eWL5xVL/plugin-config)
+{% content-ref url="/broken/pages/LUTGjyyRzf2UNqGo42ld" %}
+[Broken link](/broken/pages/LUTGjyyRzf2UNqGo42ld)
 {% endcontent-ref %}
 
 {% content-ref url="https://app.gitbook.com/s/EbT1PoPu2eqE3eWL5xVL/developers" %}
