@@ -1,0 +1,35 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: SamsCreations Docs
+  structure:
+    - type: space
+      key: space-3
+      title: Select Plugin Here!
+      path: select-plugin-here
+      default: true
+      content:
+        directory: ./select-plugin-here
+    - type: space
+      key: space-1
+      title: SamsRank
+      path: samsrank
+      content:
+        directory: ./samsrank
+    - type: space
+      key: space-4
+      title: SamsWheel
+      path: samswheel
+      content:
+        directory: ./samswheel
+    - type: space
+      key: space-5
+      title: SamsSeasons
+      path: samsseasons
+      content:
+        directory: ./samsseasons
+    - type: space
+      key: space-2
+      title: SamsHead
+      path: samshead
+      content:
+        directory: ./samshead
